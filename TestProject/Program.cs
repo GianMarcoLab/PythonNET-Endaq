@@ -1,5 +1,8 @@
 ﻿// See https://aka.ms/new-console-template for more information
 using TestProject;
+using TestProject.Endap_Calc.Filters;
+
+Console.WriteLine(Filters._get_filter_frequencies_type(null, null));
 
 void Main()
 {
@@ -20,7 +23,7 @@ accel = accel - accel.median()
 #Calculate SRS
 freqs = endaq.calc.utils.logfreqs(accel, init_freq=1, bins_per_octave=12)
 srs = endaq.calc.shock.shock_spectrum(accel, freqs=freqs, damp=0.05, mode='srs')
-print(freqs, srs)
+print(freqs, srs)cc 
 ");
 }
 
